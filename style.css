@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: cursive;
+    
+    /* color: #fff; */
+}
+/* To center everything in game */
+.game{
+    background-color: rgb(194, 125, 90);
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh;
+    width: 100vw; */
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* Title of the game */
+.title{
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 2;
+    
+}
+ 
+/* Score Board */
+.score{
+    display: flex;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+    padding-top: 3%;
+}
+ 
+/* Score  */
+.p-count,.c-count{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+ 
+/* displaying three buttons in one line */
+.options{
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+ 
+/* Styling on all three buttons */
+.rock, .paper, .scissor{
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: green;
+    background-color: green;
+    outline: none;
+    border-color: green;
+    border: none;
+    cursor: pointer;
+}
+ 
+.move{
+    font-size: 2rem;
+    font-weight: bold;
+}
+ 
+/* Reload button style */
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+ 
+.result{
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: green;
+}
+ 
+/* Responsive Design */
+@media screen and (max-width: 612px)
+{ 
+    .title{
+        text-align: center;
+    }
+    .score{
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+    .options{
+        width: 100vw;
+    }
+}
+.button-container {
+    width: 100%;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.button-container button {
+    margin-left: 5px;
+}
+.curve-button {
+    background: white;
+    border: none;
+    border: 2px solid green;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: green;
+    font-weight: bold;
+}
+.curve-button:hover {
+    background-color: green;
+    color: #fff;
+
+}
+.button-active {
+    background-color: green;
+    color: #fff;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block !important;
+
+}
+
+.history-container {
+    height: 100vh !important;
+  }
